@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="499.0" prefWidth="666.0" style="-fx-background-color: #E6F3F4; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchEmployeeByNameController">
+	<children>
+		<TextField fx:id="nameField" layoutX="262.0" layoutY="120.0" prefHeight="27.0" prefWidth="199.0" promptText="Enter Employee Name" style="-fx-background-color: #ffffff; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<Button layoutX="483.0" layoutY="118.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #7ea2b0; -fx-background-radius: 7; -fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: #ffffff;" text="SEARCH" textFill="WHITE">
+			<font>
+				<Font name="Tw Cen MT Bold" size="14.0" />
+			</font>
+		</Button>
+		<Label fx:id="resultLabel" layoutX="39.0" layoutY="81.0" text="" />
+		<TextField alignment="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="40.0" prefWidth="660.0" style="-fx-border-radius: 0;" text="Employee Management System">
+			<font>
+				<Font name="Tw Cen MT" size="18.0" />
+			</font>
+		</TextField>
+		<Button fx:id="exitFromSearchEmployeeByName" layoutX="285.0" layoutY="443.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #7ea2b0; -fx-background-radius: 7; -fx-border-color: #ffffff; -fx-border-radius: 5; -fx-border-width: 1;" text="⬅ BACK" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Button>
+		<Text fill="#05445e" layoutX="52.0" layoutY="202.0" stroke="WHITE" strokeType="OUTSIDE" text="Employee Details:">
+			<font>
+				<Font name="Tw Cen MT" size="20.0" />
+			</font>
+		</Text>
+		<Text fill="#05445e" layoutX="52.0" layoutY="141.0" stroke="WHITE" strokeType="OUTSIDE" text="Employee Name :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="26.0" />
+			</font>
+		</Text>
+		<TableView fx:id="employeeTableView" layoutX="52.0" layoutY="235.0" prefHeight="187.0" prefWidth="562.0" style="-fx-background-color: #ffffff; -fx-border-color: #7ea2b0; -fx-border-radius: 5; -fx-border-width: 1.2;">
+			<columns>
+				<TableColumn fx:id="idColumn" editable="false" prefWidth="95.19992446899414" resizable="false" text="ID" />
+				<TableColumn fx:id="ageColumn" editable="false" prefWidth="95.2000732421875" resizable="false" text="Age" />
+				<TableColumn fx:id="designationColumn" editable="false" prefWidth="131.99998474121094" resizable="false" text="Designation" />
+				<TableColumn fx:id="phoneColumn" editable="false" prefWidth="116.800048828125" resizable="false" text="Phone" />
+				<TableColumn fx:id="salaryColumn" editable="false" prefWidth="123.20001220703125" resizable="false" text="Salary" />
+			</columns>
+		</TableView>
+	</children>
+</AnchorPane>

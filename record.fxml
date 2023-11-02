@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="501.0" prefWidth="666.0" style="-fx-background-color: #E6F3F4; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.recordController">
+	<children>
+		<TextField fx:id="employeeIdTextField" layoutX="202.0" layoutY="119.0" prefHeight="29.0" prefWidth="190.0" promptText="Enter Employee ID" style="-fx-background-color: #ffffff; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<Button fx:id="searchButton" layoutX="407.0" layoutY="119.0" mnemonicParsing="false" onAction="#searchButtonAction" style="-fx-background-color: #7ea2b0; -fx-border-color: #ffffff; -fx-border-radius: 5; -fx-border-width: 1; -fx-background-radius: 7;" text="SEARCH" textFill="WHITE">
+			<font>
+				<Font name="Tw Cen MT Bold" size="14.5" />
+			</font>
+		</Button>
+		<Label fx:id="messageLabel" layoutX="39.0" layoutY="81.0" text="" />
+		<TableView fx:id="dailyRecordTableView" layoutX="34.0" layoutY="231.0" prefHeight="194.0" prefWidth="597.0" style="-fx-background-color: #ffffff; -fx-border-color: #7ea2b0; -fx-border-radius: 5; -fx-border-width: 1.2;">
+			<columns>
+				<TableColumn fx:id="dateColumn" editable="false" prefWidth="303.2000312805176" resizable="false" text="Date" />
+				<TableColumn fx:id="hoursOrSaleColumn" editable="false" prefWidth="289.5999755859375" resizable="false" text="Hour or Sale" />
+			</columns>
+		</TableView>
+		<TextField alignment="CENTER" editable="false" layoutX="2.0" layoutY="2.0" prefHeight="40.0" prefWidth="660.0" style="-fx-border-radius: 0;" text="Employee Management System">
+			<font>
+				<Font name="Tw Cen MT" size="18.0" />
+			</font>
+		</TextField>
+		<Button fx:id="exitButton" layoutX="296.0" layoutY="445.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #7ea2b0; -fx-background-radius: 7; -fx-border-color: #ffffff; -fx-border-radius: 5; -fx-border-width: 1;" text="⬅ BACK" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Button>
+		<Text fill="#05445e" layoutX="39.0" layoutY="203.0" stroke="WHITE" strokeType="OUTSIDE" text="Daily Record :">
+			<font>
+				<Font name="Tw Cen MT" size="20.0" />
+			</font>
+		</Text>
+		<Text fill="#05445e" layoutX="39.0" layoutY="141.0" stroke="WHITE" strokeType="OUTSIDE" text="Employee Id :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="26.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="473.0" prefWidth="668.0" style="-fx-background-color: #E6F3F4; -fx-border-width: 2; -fx-border-radius: 5; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DetailsOfEmployeeController">
+	<children>
+		<TextField fx:id="nameField" editable="false" layoutX="284.0" layoutY="142.0" prefWidth="220.0" style="-fx-background-color: white; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<TextField fx:id="ageField" editable="false" layoutX="284.0" layoutY="193.0" prefWidth="220.0" style="-fx-background-color: white; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<TextField fx:id="desField" editable="false" layoutX="284.0" layoutY="243.0" prefWidth="220.0" style="-fx-background-color: white; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<TextField fx:id="phoneField" editable="false" layoutX="284.0" layoutY="293.0" prefWidth="220.0" style="-fx-background-color: white; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<TextField fx:id="salField" editable="false" layoutX="284.0" layoutY="344.0" prefWidth="220.0" style="-fx-background-color: white; -fx-border-color: #7ea2b0; -fx-border-radius: 5;" />
+		<Text fill="#05445e" layoutX="57.0" layoutY="97.0" stroke="WHITE" strokeType="OUTSIDE" text="Profile Details of Employee :">
+			<font>
+				<Font name="Tw Cen MT" size="19.0" />
+			</font>
+		</Text>
+		<Button fx:id="exitfromemployedetails" layoutX="288.0" layoutY="409.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="34.0" prefWidth="99.0" style="-fx-background-color: #7ea2b0; -fx-background-radius: 7; -fx-border-color: #ffffff; -fx-border-radius: 5; -fx-border-width: 1;" text="⬅ BACK" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Button>
+		<TextField alignment="CENTER" editable="false" layoutX="4.0" layoutY="2.0" prefHeight="40.0" prefWidth="660.0" style="-fx-border-radius: 0;" text="Employee Management System">
+			<font>
+				<Font name="Tw Cen MT" size="18.0" />
+			</font>
+		</TextField>
+		<Text fill="#05445e" layoutX="112.0" layoutY="162.0" stroke="WHITE" strokeType="OUTSIDE" text="Name :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Text>
+		<Text fill="#05445e" layoutX="109.0" layoutY="212.0" stroke="WHITE" strokeType="OUTSIDE" text="Age :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Text>
+		<Text fill="#05445e" layoutX="110.0" layoutY="263.0" stroke="WHITE" strokeType="OUTSIDE" text="Designation :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Text>
+		<Text fill="#05445e" layoutX="109.0" layoutY="312.0" stroke="WHITE" strokeType="OUTSIDE" text="Phone :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Text>
+		<Text fill="#05445e" layoutX="109.0" layoutY="363.0" stroke="WHITE" strokeType="OUTSIDE" text="Salary :">
+			<font>
+				<Font name="Tw Cen MT Bold" size="18.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

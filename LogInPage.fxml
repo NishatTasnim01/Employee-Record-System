@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #E6F3F4; -fx-border-width: 2; -fx-border-radius: 5; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogInPageController">
+   <children>
+      <Button fx:id="adminhomepage" layoutX="249.0" layoutY="215.0" mnemonicParsing="false" onAction="#admin" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Login As Admin" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="employeehomepage" layoutX="249.0" layoutY="277.0" mnemonicParsing="false" onAction="#employee" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Login As Employee" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <TextField alignment="CENTER" editable="false" layoutX="1.0" prefHeight="40.0" prefWidth="660.0" style="-fx-border-radius: 0;" text="Employee Management System">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="#05445e" layoutX="45.0" layoutY="96.0" stroke="WHITE" strokeType="OUTSIDE" text="Home Page :">
+         <font>
+            <Font name="Tw Cen MT" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #E6F3F4; -fx-border-width: 2; -fx-border-radius: 5; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeLogInController">
+   <children>
+      <Button fx:id="viewemployeedetails" layoutX="144.0" layoutY="119.0" mnemonicParsing="false" onAction="#View_My_Profile" prefHeight="28.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="View My Profile" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <TextField alignment="CENTER" editable="false" layoutX="1.0" prefHeight="40.0" prefWidth="660.0" style="-fx-border-radius: 0;" text="Employee Management System">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="editemployeephoneno" layoutX="144.0" layoutY="165.0" mnemonicParsing="false" onAction="#Edit_Phone_No" prefHeight="28.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Edit My Phone No" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchemployeebyid" layoutX="144.0" layoutY="212.0" mnemonicParsing="false" onAction="#Search_By_Id" prefHeight="28.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Search for an Employee by Id" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchemployeebyname" layoutX="143.0" layoutY="257.0" mnemonicParsing="false" onAction="#Search_By_Name" prefHeight="28.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Search for an Employee by Name" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="enterdailyrecord" layoutX="145.0" layoutY="301.0" mnemonicParsing="false" onAction="#Daily_Record" prefHeight="28.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Enter Today's Record" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="switchroletoadmin" layoutX="145.0" layoutY="347.0" mnemonicParsing="false" onAction="#Switch_Role" prefHeight="28.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Switch Role" textAlignment="CENTER" textFill="#05445e">
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitfromemployee" layoutX="295.0" layoutY="421.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="8.0" prefWidth="69.0" style="-fx-background-color: #7ea2b0; -fx-background-radius: 7; -fx-border-color: #ffffff; -fx-border-radius: 5; -fx-border-width: 1;" text="EXIT" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fill="#05445e" layoutX="42.0" layoutY="86.0" stroke="WHITE" strokeType="OUTSIDE" text="Employee Menu :">
+         <font>
+            <Font name="Tw Cen MT" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
